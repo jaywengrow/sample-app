@@ -1,0 +1,9 @@
+<h1>Your lotto  numbers today are..</h1>
+
+<ul>
+  <% @lotto_numbers.each do |lotto_number| %>
+    <li><%= lotto_number %></li>
+  <% end %>
+</ul>
+
+<h3>User views: <%= @user_views %></h3>
