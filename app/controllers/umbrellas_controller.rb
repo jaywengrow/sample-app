@@ -26,9 +26,10 @@ class UmbrellasController < ApplicationController
   end
 
   def bottles_of_beer
+    bottles = 99
     @song = ""
     while bottles > 0
-      @song += "#{bottles} bottles of beer on the wall, #{bottles} bottles of beer, take one down, pass it around, #{bottles - 1} bottles of beer on the wall!"
+      @song += "#{bottles} bottles of beer on the wall, #{bottles} bottles of beer, take one down, pass it around, #{bottles - 1} bottles of beer on the wall! "
       bottles -= 1
     end
   end
